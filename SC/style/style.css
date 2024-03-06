@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#calendar {
+    width: 300px; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.calendar-day {
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #eee;
+    margin: 2px;
+}
+
+.clear {
+    clear: both;
+}
+
+.current-day {
+    background-color: greenyellow; 
+    color: white; 
+    border-radius: 50%; 
+}
+#calendar-header {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    
+
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+select { /* Include the select element here */
+    width: 100%;    
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+
+input[type="submit"] {
+    background-color: rgb(187, 231, 154);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(69, 160, 119);
+}
+
+.table-section {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    ;
+}
+
+
+.forms-container {
+    display: none;
+}
+
+#datetime {
+    font-size: 0.8em;
+    margin-left: 10px;
+    color: rgb(49, 55, 55);
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.table-section {
+    flex-basis: calc(25% - 40px);
+    margin: 10px;
+}
+
+.table-section h2 {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table-section h2:hover {
+    background-color: rgb(148, 216, 145);
+}
+
+.forms-container {
+    display: none;
+}
+
+
+.mod-history-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mod-history-container h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.mod-history-entry {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.mod-history-entry:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.no-modifications {
+    color: #999;
+    font-style: italic;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
+}
+#calendar-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#UserMsg {
+    text-align: center; 
+    width: 100%; 
+    padding-top: 20px;
+}
+
+.username {
+    color: rgb(33, 40, 33); 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 24px;
+}
+
+.logout-button {
+    background-color: #4CAF50; 
+    color: #fff; 
+    padding: 5px 10px; 
+    font-size: 14px;
+    border-radius: 4px;
+    border: none; 
+    cursor: pointer;
+    display: inline-block; 
+    transition: background-color 0.3s; 
+    max-width: 100px;
+}
+
+.logout-button:hover {
+    background-color: darkolivegreen; 
+}
+
+input[type="submit"].logout-button {
+    background-color: #86af4c;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+input[type="submit"].logout-button:hover {
+    background-color: darkolivegreen;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* .calendar {
+    table-layout: fixed;
+    width: 60%;  
+    margin: auto;
+}
+
+.calendar th, .calendar td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.current-day {
+    background-color: #d4c419;
+}
+
+.event-day {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+.event-day:hover {
+    background-color: #388e3c;
+} */

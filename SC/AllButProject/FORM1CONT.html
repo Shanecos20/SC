@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Product Discount Calculator Extended</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main>
+        <h1>Product Discount Calculator Extended</h1>
+
+        <br>New Net Pay Form<br><br>
+        
+        <form action="display_netpaycont.php" method="post">
+
+            <div id="data">
+               
+                <label>Employee Name:</label>
+                <input type="text" name="employee_name"><br>
+
+                <label>Gross Pay:</label>
+                <input type="text" name="gross_pay"><br>
+
+                <label>Pension:</label>
+                <input type="text" name="pension"><span>%</span><br>
+
+                <label>PRSI:</label>
+                <input type="text" name="prsi"><span>%</span><br>
+
+                <label>Tax first 40,000 @ 20%:</label><br>
+                
+
+                <label>Balance @ 40%:</label>
+                
+            </div>
+
+            <div id="buttons">
+                <label>&nbsp;</label>
+                <input type="submit" value="Calculate Net Pay"><br>
+            </div>
+    </main>
+</body>
+
+</html>

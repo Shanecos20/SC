@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(200, 210, 124);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #5bd0b5;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+.return-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #62e7bf;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.return-button:hover {
+    background-color: #C9CC3F;
+}
+
+
+
+.sort-buttons {
+    text-align: center;
+    margin-top: 20px;
+    position: relative; 
+}
+
+.sort-button:hover {
+  
+    background-color: #5bd0b5;
+}
+
+
+.sort-button {
+    padding: 10px 20px;
+    background-color: #c0cb81;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: -30px; 
+    border: #5bd0b5;
+}
+
+/* venues page */
+#VsortById {
+    left: -190px;
+}
+
+#VsortByName {
+    left: -160px; 
+}
+
+#sVortByLocation {
+    right: -70px; 
+}
+
+#VsortByEventId {
+    left: -120px;
+}
+
+/* events page */
+#EsortById {
+    left: -190px;
+}
+
+#EsortByName {
+    left: -160px; 
+}
+
+#EsortByLocation {
+    right: -70px; 
+}
+
+#EsortByEventId {
+    left: -120px;
+}
+
+.message-container {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.return-button {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
